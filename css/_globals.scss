@@ -1,0 +1,58 @@
+:root {
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+
+  --Font-Size-Body: 18px;
+  --Font-Family: "Public Sans", sans-serif;
+
+  --Font-Weight-300: 300;
+  --Font-Weight-400: 400;
+  --Font-Weight-700: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Font-Family);
+}
+body {
+  min-width: 375px;
+  max-width: 2000px;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.btn {
+  margin: auto;
+  max-width: fit-content;
+  color: var(--White);
+  background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: var(--Font-Weight-700);
+}
+.btn:hover {
+  opacity: 0.7;
+}
+a:focus-visible {
+  transform: scale(1.05);
+  transition: 1s;
+  outline: none;
+}
